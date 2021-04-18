@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Suite" parallel="tests">
+
+	<!--TestType = (API,SauceLab, local) -->
+
+	<listeners>
+		<listener class-name="org.listner.utilities.JAFSetupListner" />
+		<listener class-name="org.listner.utilities.ReportListner" />
+	</listeners>	
+	
+	<test name="Test1" parallel="classes">
+	<parameter name="TestType" value="API" /> <!-- API,local,saucelab -->	
+		<parameter name="ExtentReporting" value="false" />
+		<classes>
+			<class name="com.api.requestIn.test.Request_In_test" />
+			
+		</classes>
+	</test>
+	
+	
+	
+</suite> 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="10" >
+
+	<!--TestType = (API,SauceLab, local) -->
+
+	<listeners>
+		<listener class-name="org.init.setup.SetupListner" />
+	</listeners>
+
+	<test name="TestNGTest1" >
+		<parameter name="TestType" value="local" /> <!-- local,saucelab -->
+		<parameter name="Device" value="Native" /> <!-- web,Native,mweb -->
+		<parameter name = "App" value = "ApiDemos-debug.apk"/>
+		<parameter name = "DeviceName" value = "PixelXL"/>	
+
+		<classes>
+			<class name="org.android.app.test.ScreenOperations_Test">
+			<methods>
+			<include name="validate_ToggleButton"></include>
+			<!-- <include name="validate_swipeActions"></include> -->
+			</methods>
+				
+			</class>
+			
+		</classes>
+	</test>
+
+	<!-- <test name="TestNGTest2" parallel="classes" >
+
+		<parameter name="TestType" value="local" /> local,saucelab
+		<parameter name="Device" value="web" /> web,native,mweb
+		<parameter name="Browser" value="Chrome" />
+		<parameter name="OS" value="Windows 10" />
+
+		<classes>
+			<class name="org.web.browser.test.SimpleForm_test">
+				<methods>
+					<include name="verify_Single_input_field"></include>
+				</methods>
+			</class>
+			
+		</classes>
+	</test> -->
+</suite> 

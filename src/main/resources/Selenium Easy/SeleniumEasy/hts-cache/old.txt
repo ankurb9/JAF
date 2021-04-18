@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+03:22:12	2189/2189	---M--	200	added ('OK')	text/plain	etag:%221e29c0-88d-599f6c72a5c80%22	https://www.seleniumeasy.com/robots.txt		(from )
+03:22:13	32138/32138	---M-Z	200	added ('OK')	text/html	etag:%221e0879-7d8a-5a4949cc66670-gzip%22	https://www.seleniumeasy.com/test/	C:/SelEasy/SeleniumEasy/www.seleniumeasy.com/test/index.html	(from )

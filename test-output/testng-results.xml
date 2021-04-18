@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2630" started-at="2020-07-24T23:17:24 IST" finished-at="2020-07-24T23:17:26 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2630" started-at="2020-07-24T23:17:24 IST" finished-at="2020-07-24T23:17:26 IST">
+      <class name="com.api.requestIn.Request_In_test">
+        <test-method status="PASS" signature="validate_get_request_Test()[pri:0, instance:com.api.requestIn.Request_In_test@58134517]" name="validate_get_request_Test" duration-ms="2557" started-at="2020-07-24T23:17:24 IST" finished-at="2020-07-24T23:17:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_get_request_Test -->
+      </class> <!-- com.api.requestIn.Request_In_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
